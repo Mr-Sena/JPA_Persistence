@@ -1,0 +1,2 @@
+Posiconamento: Anotação inserido sobre a instância de um Enum para definir seu tipo de correspondência
+@Enumerated(EnumType.STRING) // Argumenta que a referência do ENUM vai ser o seu nome de fato e não um núm.

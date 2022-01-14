@@ -21,7 +21,7 @@ public class Produto {
 
     private LocalDate dataCadastro = LocalDate.now();
 
-    @Enumerated(EnumType.STRING) // Argumenta que a referência do ENUM vai ser o seu nome de fato e não um núm.
+    @ManyToOne
     private Categoria categoria;
 
     public Produto(String nome, String desc, BigDecimal preco, Categoria categoria) {
@@ -32,8 +32,9 @@ public class Produto {
     }
 
 
-    //Getters and Setters
 
+
+    //Getters and Setters
 
     public LocalDate getDataCadastro() {
         return dataCadastro;
